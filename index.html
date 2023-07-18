@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mondrian Project</title>
+    <style>
+      /* Set body styles for centering the container */
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        padding: 0;
+      }
+
+      /* Define the main container for the Mondrian project */
+      .container {
+        height: 748px;
+        width: 748px;
+        display: grid;
+        background-color: black;
+        grid-template-columns: 320px 198px 153px 50px;
+        grid-template-rows: 414px 130px 155px 20px;
+        gap: 9px;
+      }
+
+      /* Define the base style for each grid item */
+      .item {
+        background-color: #f0f1ec; /* White color */
+      }
+
+      /* Define the style for the red rectangle */
+      .red {
+        background-color: #e72f24; /* Red color */
+      }
+
+      /* Define the styles for the white rectangles */
+      .white1 {
+        grid-column: span 3; /* Span 3 columns */
+      }
+
+      .white2 {
+        grid-row: span 2; /* Span 2 rows */
+      }
+
+      .white3 {
+        grid-area: 2 / 2 / -2 / -2; /* Span a specific grid area */
+      }
+
+      .white4 {
+        grid-row: span 2; /* Span 2 rows */
+      }
+
+      /* Define the style for the blue rectangle */
+      .blue {
+        background-color: #004592; /* Blue color */
+        border-bottom: 10px solid black; /* Black border at the bottom */
+      }
+
+      /* Define the style for the yellow rectangle */
+      .yellow {
+        background-color: #f9d01e; /* Yellow color */
+      }
+
+      /* Define the style for the black rectangle */
+      .black {
+        background-color: black;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="item red"></div>
+      <!-- Red rectangle -->
+      <div class="item white1"></div>
+      <!-- White rectangle spanning 3 columns -->
+      <div class="item white2"></div>
+      <!-- White rectangle spanning 2 rows -->
+      <div class="item white3"></div>
+      <!-- White rectangle spanning a specific grid area -->
+      <div class="item blue"></div>
+      <!-- Blue rectangle with black bottom border -->
+      <div class="item white4"></div>
+      <!-- White rectangle spanning 2 rows -->
+      <div class="item"></div>
+      <div class="item yellow"></div>
+      <!-- Yellow rectangle -->
+      <div class="item black"></div>
+      <!-- Black rectangle filling the remaining space -->
+    </div>
+  </body>
+</html>
